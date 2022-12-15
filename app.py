@@ -9,7 +9,7 @@ import streamlit as st
 MesoNet_classifier = Meso4()
 MesoNet_classifier.load("mesonet_weights/Meso4_DF.h5")
 
-num_to_label = {1: 'Real', 0: 'Fake'}
+num_to_label = {1: 'Real Image', 0: 'Deepfake Image'}
 
 def processed_img(img_path):
     img=load_img(img_path,target_size=(256,256,3))
@@ -50,6 +50,6 @@ def run():
 
         if st.button("Predict"):
             result = processed_img(save_image_path)
-            st.write("DeepFake Recognition: "+result)
+            st.success("DeepFake Recognition: "+result)
 
 run()
