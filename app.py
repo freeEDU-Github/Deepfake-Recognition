@@ -50,6 +50,6 @@ def run():
 
         if st.button("Predict"):
             result = processed_img(save_image_path)
-            st.success("DeepFake Recognition: "+result)
+            st.write("DeepFake Recognition: "+result)
 
 run()
