@@ -49,7 +49,7 @@ def run():
 
     # Add sample image to predict
     st.markdown("***")
-    sample_images = [("mesonet_test_images/sample1.jpg", "Sample Image 1"), ("mesonet_test_images/sample2.jpg", "Sample Image 2"), ("mesonet_test_images/sample3.jpg", "Sample Image 3"), ("mesonet_test_images/sample4.jpg", "Sample Image 4")]
+    sample_images = [("mesonet_test_images/df00204.jpg", "Sample Image 1"), ("mesonet_test_images/df01254.jpg", "Sample Image 2"), ("mesonet_test_images/real00240.jpg", "Sample Image 3"), ("mesonet_test_images/real00390.jpg", "Sample Image 4")]
     selected_image = st.selectbox("Select image to predict", options=sample_images)
     selected_image_file = selected_image[0]
     st.image(selected_image_file, use_column_width=False)
